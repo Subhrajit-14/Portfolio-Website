@@ -162,18 +162,39 @@ section {
 
 /* PROFILE SECTION */
 
-#profile {
+#about {
   display: flex;
   justify-content: center;
   gap: 5rem;
   height: 80vh;
 }
 
+.section_pic-container {
+  width: 30rem; 
+  height: 30rem;
+  margin: 0 auto; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  overflow: hidden; 
+  border-radius: 50%;
+  background-color: #f0f0f0; 
+}
+
+.section_pic-container img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+  border-radius: 50%; 
+}
+
+
 .section__pic-container {
   display: flex;
   height: 100px;
   width: 100px;
   margin: auto 0;
+  border-radius: 100px;
 }
 
 .section__text {
@@ -203,7 +224,7 @@ section {
   display: flex;
   justify-content: center;
   margin-top: 1rem;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 /* ICONS */
@@ -303,16 +324,7 @@ section {
   text-align: center;
 }
 
-.section-container {
-  gap: 4rem;
-  height: 80%;
-}
 
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
 
 /* EXPERIENCE SECTION */
 
@@ -382,43 +394,132 @@ article .icon {
 
 /* CONTACT */
 
+/* -------contact------ */
+/* CONTACT SECTION */
+
 #contact {
+  padding: 4rem 1rem;
+  background-color: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.contact-left,
+.contact-right {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-left {
+  display: flex;
   flex-direction: column;
-  height: 70vh;
+  gap: 1.5rem;
 }
 
-.contact-info-upper-container {
+.subtitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.contact-left p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.contact-left a {
+  color: #0073b1; /* LinkedIn color */
+  text-decoration: none;
+}
+
+.contact-left a:hover {
+  text-decoration: underline;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.contact-left i {
+  margin-right: 0.5rem;
+  color: #0073b1; /* LinkedIn color */
+}
+
+.social-icons {
   display: flex;
-  justify-content: center;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  background: (250, 250, 250);
-  margin: 2rem auto;
-  padding: 0.5rem;
+  gap: 1rem;
 }
 
-.contact-info-container {
+.social-icons a {
+  color: #333;
+  font-size: 2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #0073b1; /* LinkedIn color */
+  transform: scale(1.2);
+}
+
+.contact-right {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  margin: 1rem;
 }
 
-.contact-info-container p {
-  font-size: larger;
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
 }
 
-.contact-icon {
-  cursor: default;
+.contact-right input,
+.contact-right textarea {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
 }
 
-.email-icon {
-  height: 2.5rem;
+.contact-right input:focus,
+.contact-right textarea:focus {
+  border-color: #0073b1; /* LinkedIn color */
+  outline: none;
 }
+
+.contact-right button {
+  padding: 0.8rem;
+  background-color: #0073b1; /* LinkedIn color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-right button:hover {
+  background-color: #005582; /* Darker LinkedIn color */
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+
+
 
 /* FOOTER SECTION */
 
@@ -430,3 +531,5 @@ footer {
 footer p {
   text-align: center;
 }
+
+

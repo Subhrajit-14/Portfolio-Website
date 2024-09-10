@@ -1,105 +1,189 @@
+/* Responsive Design */
+
+/* For screens smaller than 1400px */
 @media screen and (max-width: 1400px) {
-    #profile {
-      height: 83vh;
-      margin-bottom: 6rem;
-    }
-    .about-containers {
-      flex-wrap: wrap;
-    }
-    #contact,
-    #projects {
-      height: fit-content;
-    }
+  #profile {
+    height: 75vh; /* Adjust height */
+    margin-bottom: 4rem; /* Adjust margin */
   }
   
-  @media screen and (max-width: 1200px) {
-    #desktop-nav {
-      display: none;
-    }
-    #hamburger-nav {
-      display: flex;
-    }
-    #experience,
-    .experience-details-container {
-      margin-top: 2rem;
-    }
-    #profile,
-    .section-container {
-      display: block;
-    }
-    .arrow {
-      display: none;
-    }
-    section,
-    .section-container {
-      height: fit-content;
-    }
-    section {
-      margin: 0 5%;
-    }
-    .section__pic-container {
-      width: 200px;
-      height: 100px;
-      margin: 0 auto 1rem;
-      padding-left: 10%;
-    }
-    .about-containers {
-      margin-top: 0;
-    }
+  .about-containers {
+    flex-wrap: wrap;
   }
   
-  @media screen and (max-width: 600px) {
-    #contact,
-    footer {
-      height: 40vh;
-    }
-    #profile {
-      height: 83vh;
-      margin-bottom: 0;
-    }
-    article {
-      font-size: 1rem;
-    }
-    footer nav {
-      height: fit-content;
-      margin-bottom: 2rem;
-    }
-    .about-containers,
-    .contact-info-upper-container,
-    .btn-container {
-      flex-wrap: wrap;
-    }
-    .contact-info-container {
-      margin: 0;
-    }
-    .contact-info-container p,
-    .nav-links li a {
-      font-size: 1rem;
-    }
-    .experience-sub-title {
-      font-size: 1.25rem;
-    }
-    .logo {
-      font-size: 1.5rem;
-    }
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-    }
-    .section__pic-container {
-      width: auto;
-      height: 46vw;
-      justify-content: center;
-    }
-    .section__text__p2 {
-      font-size: 1.25rem;
-    }
-    .title {
-      font-size: 2rem;
-    }
-    .text-container {
-      text-align: justify;
-    }
+  #contact,
+  #projects {
+    height: auto; /* Adjust to fit content */
+  }
+}
+
+/* For screens smaller than 1200px (Laptops) */
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none; /* Hide desktop navigation */
   }
   
+  #hamburger-nav {
+    display: flex; /* Show hamburger menu */
+  }
+  
+  #experience,
+  .experience-details-container {
+    margin-top: 1.5rem; /* Adjust margin */
+  }
+  
+  #profile,
+  .section-container {
+    display: block; /* Stack elements vertically */
+  }
+  
+  .arrow {
+    display: none; /* Hide arrow */
+  }
+  
+  section,
+  .section-container {
+    height: auto; /* Adjust height to fit content */
+    margin: 0 2%; /* Adjust margin */
+  }
+  
+  .section__pic-container {
+    width: 150px; /* Adjust width */
+    height: 75px; /* Adjust height */
+    margin: 0 auto 1rem;
+    padding-left: 5%; /* Adjust padding */
+  }
+  
+  .about-containers {
+    margin-top: 1rem; /* Adjust margin */
+  }
+}
+
+/* For screens smaller than 992px (Tablets) */
+@media screen and (max-width: 992px) {
+  nav {
+    height: 10vh; /* Adjust navigation height */
+  }
+  
+  .nav-links {
+    font-size: 1.25rem; /* Adjust font size */
+  }
+  
+  .section-container {
+    margin: 0 1rem; /* Adjust margin */
+  }
+  
+  #profile {
+    height: auto; /* Adjust height */
+    margin-bottom: 3rem; /* Adjust margin */
+  }
+  
+  .section__pic-container {
+    width: 120px; /* Adjust width */
+    height: 60px; /* Adjust height */
+  }
+  
+  .title {
+    font-size: 1.75rem; /* Adjust font size */
+  }
+  
+  .details-container {
+    padding: 1rem; /* Adjust padding */
+    font-size: 0.9rem; /* Adjust font size */
+  }
+  
+  .btn {
+    font-size: 1rem; /* Adjust font size */
+    padding: 0.8rem; /* Adjust padding */
+    width: 6rem; /* Adjust width */
+  }
+}
+
+/* For screens smaller than 768px (Phones) */
+@media screen and (max-width: 768px) {
+  nav {
+    height: 8vh; /* Adjust navigation height */
+  }
+  
+  .nav-links {
+    display: none; /* Hide desktop navigation links */
+  }
+  
+  #hamburger-nav {
+    display: flex; /* Show hamburger menu */
+  }
+  
+  .section-container {
+    margin: 0 0.5rem; /* Adjust margin */
+    flex-direction: column; /* Stack items vertically */
+  }
+  
+  #profile {
+    height: auto; /* Adjust height */
+    margin-bottom: 2rem; /* Adjust margin */
+  }
+  
+  .section__pic-container {
+    width: 100px; /* Adjust width */
+    height: 50px; /* Adjust height */
+  }
+  
+  .title {
+    font-size: 1.5rem; /* Adjust font size */
+  }
+  
+  .details-container {
+    padding: 0.5rem; /* Adjust padding */
+    font-size: 0.8rem; /* Adjust font size */
+  }
+  
+  .btn {
+    font-size: 0.9rem; /* Adjust font size */
+    padding: 0.6rem; /* Adjust padding */
+    width: 5rem; /* Adjust width */
+  }
+  
+  .contact-left p {
+    font-size: 1rem; /* Adjust font size */
+  }
+  
+  .contact-right input,
+  .contact-right textarea {
+    font-size: 0.875rem; /* Adjust font size */
+  }
+  
+  .contact-right button {
+    font-size: 1rem; /* Adjust font size */
+  }
+}
+
+/* For screens smaller than 576px (Small Phones) */
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 1.25rem; /* Further adjust font size */
+  }
+  
+  .details-container {
+    padding: 0.5rem; /* Further adjust padding */
+    font-size: 0.7rem; /* Further adjust font size */
+  }
+  
+  .btn {
+    font-size: 0.75rem; /* Further adjust font size */
+    padding: 0.4rem; /* Further adjust padding */
+    width: 4rem; /* Further adjust width */
+  }
+  
+  .contact-left p {
+    font-size: 0.9rem; /* Further adjust font size */
+  }
+  
+  .contact-right input,
+  .contact-right textarea {
+    font-size: 0.75rem; /* Further adjust font size */
+  }
+  
+  .contact-right button {
+    font-size: 0.9rem; /* Further adjust font size */
+  }
+}
