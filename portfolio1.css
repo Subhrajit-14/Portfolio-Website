@@ -22,6 +22,11 @@
 
   #hamburger-nav {
     display: flex;
+    padding: 10px;
+
+  }
+  .menu-links{
+    display: flex;
   }
 
   #experience, .experience-details-container {
@@ -63,6 +68,9 @@
     font-size: 1.25rem;
   }
 
+  .menu-links{
+    display: flex;
+  }
   .section-container {
     margin: 0 1rem;
   }
@@ -95,6 +103,17 @@
 
 /* For screens smaller than 768px (Phones) */
 @media screen and (max-width: 768px) {
+  .logo{
+    font-size: 24px;
+  }
+  .section_pic-container img{
+    height: 350px !important;
+    width: 350px !important; 
+  }
+  #about{
+    flex-direction: column;
+    height: fit-content;
+  }
   nav {
     height: 6vh;
   }
@@ -105,10 +124,16 @@
 
   #hamburger-nav {
     display: flex;
+    padding-right: 20px;
+    
+    width: 100%;
   }
   .menu-links{
     display: flex;
+    margin-right: 10px;
     margin-bottom: 10px;
+    font-size:medium;
+
   }
 
   .section-container {
@@ -171,6 +196,7 @@
 
   .hamburger-menu {
     display: flex;
+    margin-left: 80px;
   }
 
   .menu-links {
@@ -189,6 +215,7 @@
   .menu-links a {
     width: 100%;
     text-align: center;
+    font-size:large;
     padding: 0.5rem;
   }
 
