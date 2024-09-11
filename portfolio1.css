@@ -1,189 +1,223 @@
-/* Responsive Design */
-
 /* For screens smaller than 1400px */
 @media screen and (max-width: 1400px) {
   #profile {
-    height: 75vh; /* Adjust height */
-    margin-bottom: 4rem; /* Adjust margin */
+    height: 70vh;
+    margin-bottom: 2rem;
   }
-  
+
   .about-containers {
     flex-wrap: wrap;
   }
-  
-  #contact,
-  #projects {
-    height: auto; /* Adjust to fit content */
+
+  #contact, #projects {
+    height: auto;
   }
 }
 
 /* For screens smaller than 1200px (Laptops) */
 @media screen and (max-width: 1200px) {
   #desktop-nav {
-    display: none; /* Hide desktop navigation */
+    display: none;
   }
-  
+
   #hamburger-nav {
-    display: flex; /* Show hamburger menu */
+    display: flex;
   }
-  
-  #experience,
-  .experience-details-container {
-    margin-top: 1.5rem; /* Adjust margin */
+
+  #experience, .experience-details-container {
+    margin-top: 1.5rem;
   }
-  
-  #profile,
-  .section-container {
-    display: block; /* Stack elements vertically */
+
+  #profile, .section-container {
+    display: block;
   }
-  
+
   .arrow {
-    display: none; /* Hide arrow */
+    display: none;
   }
-  
-  section,
-  .section-container {
-    height: auto; /* Adjust height to fit content */
-    margin: 0 2%; /* Adjust margin */
+
+  section, .section-container {
+    height: auto;
+    margin: 0 2%;
   }
-  
+
   .section__pic-container {
-    width: 150px; /* Adjust width */
-    height: 75px; /* Adjust height */
+    width: 150px;
+    height: 75px;
     margin: 0 auto 1rem;
-    padding-left: 5%; /* Adjust padding */
+    padding-left: 5%;
   }
-  
+
   .about-containers {
-    margin-top: 1rem; /* Adjust margin */
+    margin-top: 1rem;
   }
 }
 
 /* For screens smaller than 992px (Tablets) */
 @media screen and (max-width: 992px) {
   nav {
-    height: 10vh; /* Adjust navigation height */
+    height: 5vh;
   }
-  
+
   .nav-links {
-    font-size: 1.25rem; /* Adjust font size */
+    font-size: 1.25rem;
   }
-  
+
   .section-container {
-    margin: 0 1rem; /* Adjust margin */
+    margin: 0 1rem;
   }
-  
+
   #profile {
-    height: auto; /* Adjust height */
-    margin-bottom: 3rem; /* Adjust margin */
+    height: 10rem;
+    margin-bottom: 3rem;
   }
-  
+
   .section__pic-container {
-    width: 120px; /* Adjust width */
-    height: 60px; /* Adjust height */
+    width: 120px;
+    height: 60px;
   }
-  
+
   .title {
-    font-size: 1.75rem; /* Adjust font size */
+    font-size: 1.75rem;
   }
-  
+
   .details-container {
-    padding: 1rem; /* Adjust padding */
-    font-size: 0.9rem; /* Adjust font size */
+    padding: 1rem;
+    font-size: 0.9rem;
   }
-  
+
   .btn {
-    font-size: 1rem; /* Adjust font size */
-    padding: 0.8rem; /* Adjust padding */
-    width: 6rem; /* Adjust width */
+    font-size: 1rem;
+    padding: 0.8rem;
+    width: 6rem;
   }
 }
 
 /* For screens smaller than 768px (Phones) */
 @media screen and (max-width: 768px) {
   nav {
-    height: 8vh; /* Adjust navigation height */
+    height: 6vh;
   }
-  
+
   .nav-links {
-    display: none; /* Hide desktop navigation links */
+    display: none;
   }
-  
+
   #hamburger-nav {
-    display: flex; /* Show hamburger menu */
+    display: flex;
   }
-  
+  .menu-links{
+    display: flex;
+    margin-bottom: 10px;
+  }
+
   .section-container {
-    margin: 0 0.5rem; /* Adjust margin */
-    flex-direction: column; /* Stack items vertically */
+    margin: 0 0.5rem;
+    flex-direction: column;
   }
-  
+
   #profile {
-    height: auto; /* Adjust height */
-    margin-bottom: 2rem; /* Adjust margin */
+    height: auto;
+    margin-bottom: 2rem;
   }
-  
+
   .section__pic-container {
-    width: 100px; /* Adjust width */
-    height: 50px; /* Adjust height */
+    width: 100px;
+    height: 50px;
   }
-  
+
   .title {
-    font-size: 1.5rem; /* Adjust font size */
+    font-size: 1.5rem;
   }
-  
+
   .details-container {
-    padding: 0.5rem; /* Adjust padding */
-    font-size: 0.8rem; /* Adjust font size */
+    padding: 0.5rem;
+    font-size: 0.8rem;
   }
-  
+
   .btn {
-    font-size: 0.9rem; /* Adjust font size */
-    padding: 0.6rem; /* Adjust padding */
-    width: 5rem; /* Adjust width */
+    font-size: 0.9rem;
+    padding: 0.6rem;
+    width: 5rem;
   }
-  
+
   .contact-left p {
-    font-size: 1rem; /* Adjust font size */
+    font-size: 1rem;
   }
-  
+
   .contact-right input,
   .contact-right textarea {
-    font-size: 0.875rem; /* Adjust font size */
+    font-size: 0.875rem;
   }
-  
+
   .contact-right button {
-    font-size: 1rem; /* Adjust font size */
+    font-size: 1rem;
   }
 }
 
 /* For screens smaller than 576px (Small Phones) */
 @media screen and (max-width: 576px) {
+  nav {
+    height: 6vh;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .menu-links {
+    display: flex;
+  }
+
+  .hamburger-icon {
+    cursor: pointer;
+  }
+
+  .hamburger-icon.open {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .menu-links a {
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .section-container {
+    margin: 0 0.5rem;
+    flex-direction: column;
+  }
+
+  #profile {
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .section__pic-container {
+    width: 100px;
+    height: 50px;
+  }
+
   .title {
-    font-size: 1.25rem; /* Further adjust font size */
+    font-size: 1.25rem;
   }
-  
+
   .details-container {
-    padding: 0.5rem; /* Further adjust padding */
-    font-size: 0.7rem; /* Further adjust font size */
+    padding: 0.5rem;
+    font-size: 0.7rem;
   }
-  
+
   .btn {
-    font-size: 0.75rem; /* Further adjust font size */
-    padding: 0.4rem; /* Further adjust padding */
-    width: 4rem; /* Further adjust width */
-  }
-  
-  .contact-left p {
-    font-size: 0.9rem; /* Further adjust font size */
-  }
-  
-  .contact-right input,
-  .contact-right textarea {
-    font-size: 0.75rem; /* Further adjust font size */
-  }
-  
-  .contact-right button {
-    font-size: 0.9rem; /* Further adjust font size */
+    font-size: 0.75rem;
+    padding: 0.1;
   }
 }
