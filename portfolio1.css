@@ -26,7 +26,8 @@
 
   }
   .menu-links{
-    display: flex;
+    background-color: rgba(255, 255, 255,); 
+    z-index: 1000;
   }
 
   #experience, .experience-details-container {
@@ -67,9 +68,9 @@
   .nav-links {
     font-size: 1.25rem;
   }
-
   .menu-links{
-    display: flex;
+    background-color: rgba(255, 255, 255,); 
+    z-index: 1000;
   }
   .section-container {
     margin: 0 1rem;
@@ -104,27 +105,30 @@
 /* For screens smaller than 768px (Phones) */
 @media screen and (max-width: 768px) {
   body {
-    overflow-x: hidden; /* Removes horizontal scrolling */
-    text-align: center; /* Center aligns all content */
+    overflow-x: hidden; 
+    text-align: center; 
   }
   
   .about-containers {
     flex-direction: column;
-    align-items: center; /* Center aligns the content in about section */
+    align-items: center; 
+    margin-left: 20px;
   }
   
   .logo {
     font-size: 24px;
+    margin-left: 100px;
   }
 
   .section_pic-container img {
-    height: 350px !important;
-    width: 350px !important; 
+    height: 325px !important;
+    width: 325px !important; 
   }
 
   #about {
     flex-direction: column;
     height: fit-content;
+    margin-left: 15px;
   }
 
   nav {
@@ -142,9 +146,11 @@
   }
 
   .menu-links {
-    flex-direction: column; /* Changes menu to display in a column */
-    align-items: center; /* Center aligns the menu links */
-  }
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255); 
+    z-index: 1000;
+}
 
   .section-container {
     margin: 0 0.5rem;
@@ -154,6 +160,7 @@
   #profile {
     height: auto;
     margin-bottom: 2rem;
+    margin-left: 20px;
   }
 
   .section__pic-container {
@@ -168,8 +175,11 @@
   .details-container {
     padding: 0.5rem;
     font-size: 0.8rem;
+    
   }
-
+  .paragraph{
+    margin-left: 10px;
+  }
   .btn {
     font-size: 0.9rem;
     padding: 0.6rem;
@@ -193,8 +203,13 @@
 /* For screens smaller than 576px (Small Phones) */
 @media screen and (max-width: 576px) {
   body {
-    overflow-x: hidden; /* Ensure horizontal scrolling is removed */
+    overflow-x: hidden; 
     text-align: center;
+  }
+
+  .section_pic-container img {
+    height: 250px ;
+    width: 250px ;
   }
 
   nav {
@@ -207,6 +222,7 @@
 
   #hamburger-nav {
     display: flex;
+    
   }
 
   .hamburger-menu {
@@ -216,8 +232,10 @@
 
   .menu-links {
     display: flex;
-    flex-direction: column; /* Changes menu to display in a column */
-    align-items: center; /* Center aligns the menu items */
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255); 
+    z-index: 1000;
   }
 
   .hamburger-icon {

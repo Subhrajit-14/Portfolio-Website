@@ -555,9 +555,10 @@ body.dark-theme .back-to-top {
 }
 
 .theme-switch {
-  position: fixed;
+  /* position: fixed; */
   top: 20px;
   right: 20px;
+  margin-left: 100rem;
 }
 
 
