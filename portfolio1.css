@@ -103,17 +103,30 @@
 
 /* For screens smaller than 768px (Phones) */
 @media screen and (max-width: 768px) {
-  .logo{
+  body {
+    overflow-x: hidden; /* Removes horizontal scrolling */
+    text-align: center; /* Center aligns all content */
+  }
+  
+  .about-containers {
+    flex-direction: column;
+    align-items: center; /* Center aligns the content in about section */
+  }
+  
+  .logo {
     font-size: 24px;
   }
-  .section_pic-container img{
+
+  .section_pic-container img {
     height: 350px !important;
     width: 350px !important; 
   }
-  #about{
+
+  #about {
     flex-direction: column;
     height: fit-content;
   }
+
   nav {
     height: 6vh;
   }
@@ -125,15 +138,12 @@
   #hamburger-nav {
     display: flex;
     padding-right: 20px;
-    
     width: 100%;
   }
-  .menu-links{
-    display: flex;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    font-size:medium;
 
+  .menu-links {
+    flex-direction: column; /* Changes menu to display in a column */
+    align-items: center; /* Center aligns the menu links */
   }
 
   .section-container {
@@ -182,6 +192,11 @@
 
 /* For screens smaller than 576px (Small Phones) */
 @media screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden; /* Ensure horizontal scrolling is removed */
+    text-align: center;
+  }
+
   nav {
     height: 6vh;
   }
@@ -201,6 +216,8 @@
 
   .menu-links {
     display: flex;
+    flex-direction: column; /* Changes menu to display in a column */
+    align-items: center; /* Center aligns the menu items */
   }
 
   .hamburger-icon {
@@ -215,7 +232,7 @@
   .menu-links a {
     width: 100%;
     text-align: center;
-    font-size:large;
+    font-size: large;
     padding: 0.5rem;
   }
 
