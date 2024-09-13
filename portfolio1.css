@@ -22,7 +22,7 @@
 
   #hamburger-nav {
     display: flex;
-    padding: 10px;
+    /* padding: 5px; */
 
   }
   .menu-links{
@@ -141,7 +141,7 @@
 
   #hamburger-nav {
     display: flex;
-    padding-right: 20px;
+    
     width: 100%;
   }
 
@@ -206,6 +206,9 @@
     overflow-x: hidden; 
     text-align: center;
   }
+  .theme-switch{
+    z-index: 1000;
+  }
 
   .section_pic-container img {
     height: 250px ;
@@ -257,6 +260,15 @@
   .section-container {
     margin: 0 0.5rem;
     flex-direction: column;
+  }
+  #experience{
+    margin-right: 20px;
+  }
+  #projects{
+    margin-right: 20px;
+  }
+  .paragraph{
+    margin-right: 20px;
   }
 
   #profile {
